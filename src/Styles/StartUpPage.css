@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,800&display=swap");
+
+.startUpPage {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  overflow: hidden;
+}
+.formSection {
+  height: 100vh;
+  top: 0vh;
+  width: 30.7vw;
+  right: 0vw;
+  background-image: url(/src/assets/imgg2.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: auto 100vh;
+}
+.contentSection {
+  width: 69.3vw;
+  background-image: url("../assets/img1.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center bottom;
+  background-size: 55vw auto;
+}
+.formHeaderText {
+  flex-grow: 1;
+}
+.startPageLogo {
+  position: relative;
+  top: 0vh;
+  right: 28vw;
+  width: 8vw;
+  padding: 2vw;
+}
+.signUpForm {
+  flex-grow: 0;
+}
+.formButton {
+  flex-grow: 0;
+  margin-top: 2vh;
+}
+.contentDescSection {
+  padding-left: 4vw;
+  line-height: 1;
+  margin-top: 1vh;
+}
+.switchAuth {
+  flex-grow: 2.2;
+  margin-top: 3vh;
+}
+.formGroup {
+  margin: 15px;
+  padding-inline: 2.5vw;
+}
+.formElement {
+  height: 9vh !important;
+}
+.homeImage {
+  height: 59.5vh;
+}
+.signUpButton {
+  border-radius: 150px;
+  width: 8.5vw;
+  height: 6vh;
+}
+.signUpButton:hover {
+  background-color: #791dc4;
+  color: aliceblue;
+  box-shadow: 0 0 5px #ffffff;
+}
+.signInButton {
+  border-radius: 150px;
+  width: 8.5vw;
+  height: 6vh;
+}
+.signInButton:hover {
+  background-color: #d9941d;
+  color: aliceblue;
+  box-shadow: 0 0 5px #ffffff;
+}
+.contentMoto {
+  text-align: left;
+}
+.switchToSignIn {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.switchToSignUp {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.switchToSignIn:hover {
+  color: #981cfc;
+}
+.switchToSignUp:hover {
+  color: #ffac1c;
+}
+.hidePassword {
+  color: rgba(96, 96, 96, 0.473);
+  position: absolute;
+  width: 21vw;
+  z-index: 1;
+  margin-top: 3.5vh;
+  height: 3.5vh;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .startUpPage {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    overflow: hidden;
+    flex-direction: column !important;
+  }
+  .contentDescSection {
+    padding-left: 3vw;
+    line-height: 1;
+    margin-top: 16vh;
+  }
+  .contentDescSection {
+    padding-inline: 4vw;
+    line-height: 1;
+    margin-top: 10vh;
+  }
+  .largeText {
+    font-size: 5vw;
+    text-align: left;
+  }
+  .startPageLogo {
+    position: relative;
+    top: 0vh;
+    right: 43vw;
+    width: 12vw;
+    padding: 2vw;
+  }
+  .contentSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/assets/img1.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center bottom;
+    background-size: 100vw auto;
+  }
+  .formSection {
+    height: 100vh;
+    top: 0vh;
+    width: 100vw;
+    right: 0vw;
+    background-image: url(/src/assets/imgg2.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100vw 100vh;
+  }
+  .formFloatingLabel {
+    margin-inline: 10vw;
+  }
+  .hidePassword {
+    color: rgba(96, 96, 96, 0.473);
+    position: absolute;
+    width: 56vw;
+    z-index: 1;
+    margin-top: 3.5vh;
+    height: 3.5vh;
+  }
+  .signUpButton {
+    border-radius: 150px;
+    width: 20.5vw;
+    height: 6vh;
+  }
+  .signInButton {
+    border-radius: 150px;
+    width: 20.5vw;
+    height: 6vh;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .startUpPage {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    overflow: hidden;
+    flex-direction: column !important;
+  }
+  .contentDescSection {
+    padding-left: 3vw;
+    line-height: 1;
+    margin-top: 16vh;
+  }
+  .contentDescSection {
+    padding-inline: 8vw;
+    line-height: 1;
+    margin-top: 10vh;
+  }
+  .largeText {
+    font-size: 5vw;
+    text-align: left;
+  }
+  .startPageLogo {
+    position: relative;
+    top: 0vh;
+    right: 43vw;
+    width: 12vw;
+    padding: 2vw;
+  }
+  .contentSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/assets/img1.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center bottom;
+    background-size: 100vw auto;
+  }
+  .formSection {
+    height: 100vh;
+    top: 0vh;
+    width: 100vw;
+    right: 0vw;
+    background-image: url(/src/assets/imgg2.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100vw 100vh;
+  }
+  .formFloatingLabel {
+    margin-inline: 10vw;
+  }
+  .hidePassword {
+    color: rgba(96, 96, 96, 0.473);
+    position: absolute;
+    width: 56vw;
+    z-index: 1;
+    margin-top: 3.5vh;
+    height: 3.5vh;
+  }
+  .signUpButton {
+    border-radius: 150px;
+    width: 20.5vw;
+    height: 6vh;
+  }
+  .signInButton {
+    border-radius: 150px;
+    width: 20.5vw;
+    height: 6vh;
+  }
+}
+/* Css for large mobile screen  */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .startUpPage {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    overflow: hidden;
+    flex-direction: column !important;
+  }
+  .contentDescSection {
+    padding-left: 3vw;
+    line-height: 1;
+    margin-top: 16vh;
+  }
+  .contentDescSection {
+    padding-inline: 8vw;
+    line-height: 1;
+    margin-top: 10vh;
+  }
+  .largeText {
+    font-size: 5vw;
+    text-align: left;
+  }
+  .startPageLogo {
+    position: relative;
+    top: 0vh;
+    right: 43vw;
+    width: 12vw;
+    padding: 2vw;
+  }
+  .contentSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/assets/img1.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center bottom;
+    background-size: 100vw auto;
+  }
+  .formSection {
+    height: 100vh;
+    top: 0vh;
+    width: 100vw;
+    right: 0vw;
+    background-image: url(/src/assets/imgg2.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100vw 100vh;
+  }
+  .formFloatingLabel {
+    margin-inline: 10vw;
+  }
+  .hidePassword {
+    color: rgba(96, 96, 96, 0.473);
+    position: absolute;
+    width: 56vw;
+    z-index: 1;
+    margin-top: 3.5vh;
+    height: 3.5vh;
+  }
+  .signUpButton {
+    border-radius: 150px;
+    width: 20.5vw;
+    height: 6vh;
+  }
+  .signInButton {
+    border-radius: 150px;
+    width: 20.5vw;
+    height: 6vh;
+  }
+}
+/* Responsiveness for laptop screen 1024px screen */
+@media screen and (min-width: 1024px) {
+  .formElement {
+    height: 10vh !important;
+  }
+}

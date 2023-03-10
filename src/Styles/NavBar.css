@@ -1,0 +1,121 @@
+.userImage {
+  width: 3vw;
+  border-radius: 50%;
+}
+.userName {
+  padding-inline: 1vw;
+  padding-top: 1.5vh;
+}
+.userProfile {
+  padding: 2vw;
+}
+.userImage:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.navEmptySpace {
+  flex-grow: 3;
+}
+.navBarLogo {
+  padding: 2vw;
+  width: 8vw;
+}
+.userDropDownMenu {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+.dropDownOption:hover {
+  background-color: #981cfc;
+  color: white;
+}
+.dropDownContainer {
+  position: absolute;
+  top: 12vh;
+  right: 14vw;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .navBarLogo {
+    padding: 3vw;
+    width: 14vw;
+  }
+  .dropDownContainer {
+    position: absolute;
+    top: 10vh;
+    right: 56vw;
+  }
+  .userName {
+    padding-inline: 3vw;
+    padding-top: 0vh !important;
+  }
+  .userImage {
+    width: 6vw;
+    border-radius: 50%;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .navBarLogo {
+    padding: 3vw;
+    width: 14vw;
+  }
+  .dropDownContainer {
+    position: absolute;
+    top: 10vh;
+    right: 45vw;
+  }
+  .userName {
+    padding-inline: 3vw;
+    padding-top: 0vh !important;
+  }
+  .userImage {
+    width: 6vw;
+    border-radius: 50%;
+  }
+}
+/* Responsiveness for large mobile screen */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .navBarLogo {
+    padding: 3vw;
+    width: 14vw;
+  }
+  .dropDownContainer {
+    position: absolute;
+    top: 12vh;
+    right: 41vw;
+  }
+  .userName {
+    padding-inline: 3vw;
+    padding-top: 0vh !important;
+  }
+  .userImage {
+    width: 6vw;
+    border-radius: 50%;
+  }
+}
+/* Responsiveness for tablet screen 768px screen */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .dropDownContainer {
+    position: absolute;
+    top: 12vh;
+    right: 22vw;
+  }
+}
+/* Responsiveness for laptop screen 1024px screen */
+@media screen and (min-width: 1024px) {
+  .dropDownContainer {
+    position: absolute;
+    top: 12vh;
+    right: 18vw;
+  }
+}
+/* Responsiveness for laptop screen 1440px screen */
+@media screen and (min-width: 1440px) {
+  .dropDownContainer {
+    position: absolute;
+    top: 15vh;
+    right: 12vw;
+  }
+}

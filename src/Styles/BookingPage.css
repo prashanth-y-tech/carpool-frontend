@@ -1,0 +1,304 @@
+.bookingSection {
+  width: 98vw;
+  background-image: url("../assets/img4.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center bottom;
+  background-size: 90vw auto;
+  background-attachment: fixed;
+}
+.formInputFeild {
+  border-top: none;
+  border-inline: none;
+  width: 21vw;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: #981cfc solid;
+}
+input[type="date"]:focus {
+  outline: none;
+  border-bottom: #981cfc solid;
+}
+input[type="number"]:focus {
+  outline: none;
+  border-bottom: #981cfc solid;
+}
+.verticalFlexContainer div ul {
+  list-style: none;
+  width: fit-content;
+}
+.verticalFlexContainer div ul li {
+  width: fit-content;
+}
+
+.submitButton {
+  border-radius: 150px;
+  width: 8.5vw;
+  height: 6vh;
+  margin-bottom: 1vh;
+}
+.submitButton[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.submitButton[disabled]:hover {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.submitButton:hover {
+  background-color: #d9941d;
+  color: aliceblue;
+  box-shadow: 0 0 5px #ffffff;
+}
+.rideFillForm {
+  text-align: left;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 14px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: #ffffff;
+}
+.submitButtonSection {
+  padding-bottom: 3vw;
+  padding-left: 2vw;
+  padding-top: 2vh;
+}
+.formHeadingSection {
+  padding-top: 3vh;
+}
+.formSwitch {
+  margin-top: 3vh;
+  margin-bottom: 9vh;
+}
+.navigationAnimation {
+  margin-top: 3vh;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.locationDot {
+  color: rgba(51, 51, 51, 0.247);
+  width: 1vw;
+}
+.locationEndPoint {
+  color: #981cfc;
+  transform: scale(0.8);
+}
+.locationPointer {
+  transform: scale(1);
+}
+
+.rideDisplaySection {
+  margin: 1vw;
+}
+.rideHeadSection {
+  margin-inline: 2.5vw;
+}
+.citiesDropDownMenu {
+  min-height: 3vh;
+  max-height: 40vh;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  width: 21vw;
+}
+.timeTagSection {
+  width: 21vw;
+}
+.timeTagSection label {
+  border: 1.2px solid #981cfc;
+  margin: 0.5vw;
+  border-radius: 15px;
+  padding-inline: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
+}
+.timeTagSection label:hover {
+  background-color: #981cfc;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+}
+.timeTagSection input[type="radio"] {
+  display: none;
+}
+
+.timeTagSection input[type="radio"]:checked + label {
+  background-color: #981cfc;
+  color: white;
+  cursor: none;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+}
+
+.noRideMsg {
+  position: absolute;
+  right: 32vw;
+  top: 53vh;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .bookingMainPage {
+    flex-direction: column;
+  }
+  .noRideMsg {
+    display:none;
+  }
+  .formInputFeild {
+    border-top: none;
+    border-inline: none;
+    width: 60vw;
+  }
+  .rideDisplaySection {
+    margin-inline: 6vw;
+  }
+  .rideFillForm {
+    text-align: left;
+    padding: 2vw;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 14px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 13vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    background-color: #ffffff;
+  }
+  .locationDot {
+    color: rgba(51, 51, 51, 0.247);
+    transform: scale(3.5);
+    width: 1vw;
+  }
+  .timeTagSection {
+    width: 60vw;
+  }
+  .submitButton {
+    border-radius: 150px;
+    width: 18.5vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .bookingMainPage {
+    flex-direction: column;
+  }
+  .noRideMsg {
+    display:none;
+  }
+  .formInputFeild {
+    border-top: none;
+    border-inline: none;
+    width: 60vw;
+  }
+  .rideDisplaySection {
+    margin-inline: 6vw;
+  }
+  .rideFillForm {
+    text-align: left;
+    padding: 2vw;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 14px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 13vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    background-color: #ffffff;
+  }
+  .locationDot {
+    color: rgba(51, 51, 51, 0.247);
+    transform: scale(3.5);
+    width: 1vw;
+  }
+  .timeTagSection {
+    width: 60vw;
+  }
+  .submitButton {
+    border-radius: 150px;
+    width: 18.5vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+  }
+}
+/* Responsiveness for large mobile screen */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .bookingMainPage {
+    flex-direction: column;
+  }
+  .noRideMsg {
+    display:none;
+  }
+  .formInputFeild {
+    border-top: none;
+    border-inline: none;
+    width: 60vw;
+  }
+  .rideDisplaySection {
+    margin-inline: 6vw;
+  }
+  .rideFillForm {
+    text-align: left;
+    padding: 2vw;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 14px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 13vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    background-color: #ffffff;
+  }
+  .locationDot {
+    color: rgba(51, 51, 51, 0.247);
+    transform: scale(3.5);
+    width: 1vw;
+  }
+  .timeTagSection {
+    width: 60vw;
+  }
+  .submitButton {
+    border-radius: 150px;
+    width: 18.5vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+  }
+}
+/* Responsiveness for tablet screen screen */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .formInputFeild {
+    border-top: none;
+    border-inline: none;
+    width: 29vw;
+  }
+  .rideDisplaySection {
+    margin: 1vw;
+    align-items: center;
+    text-align: center;
+    padding-left: 10vw;
+  }
+  .rideHeadSection {
+    margin-inline: 2.5vw;
+    padding-left: 18vw;
+  }
+  .timeTagSection {
+    width: 29vw;
+  }
+}

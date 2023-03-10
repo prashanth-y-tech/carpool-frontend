@@ -1,0 +1,111 @@
+.nextButton {
+  background-color: white;
+  color: blue;
+  border: none;
+}
+.nextButton:hover {
+  background-color: white;
+  color: rgb(2, 2, 129);
+  border: none;
+  transform: scale(1.05);
+}
+.priceInputFeild {
+  width: 7vw;
+}
+.offerRidePage {
+  width: 98vw;
+  min-height: 100vh;
+  background-image: url("../assets/img4.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: bottom;
+  background-size: 90vw auto;
+  background-attachment: fixed;
+}
+.inputRange {
+  width: 12vw;
+  padding-inline: 1.5vw;
+}
+.seatCount {
+  text-align: center;
+  margin: 1vh;
+}
+.priceSelector {
+  padding: 0vw;
+  margin-top: 4vh;
+}
+.priceSelector div {
+  padding: 0.5vw;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .offerRideFormSection {
+    flex-direction: column;
+  }
+  .priceInputFeild {
+    width: 20vw;
+  }
+  .inputRange {
+    width: 34vw;
+    padding-inline: 3.5vw;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .offerRideFormSection {
+    flex-direction: column;
+  }
+  .priceInputFeild {
+    width: 20vw;
+  }
+  .inputRange {
+    width: 34vw;
+    padding-inline: 3.5vw;
+  }
+}
+/* Responsiveness for large mobile screen */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .offerRideFormSection {
+    flex-direction: column;
+  }
+  .priceInputFeild {
+    width: 20vw;
+  }
+  .inputRange {
+    width: 34vw;
+    padding-inline: 3.5vw;
+  }
+}
+/* Responsiveness for tablet screen */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .inputRange {
+    width: 16vw;
+    padding-inline: 1.5vw;
+  }
+  .priceInputFeild {
+    width: 11vw;
+  }
+  .locationDot {
+    color: rgba(51, 51, 51, 0.247);
+    width: 1vw;
+    transform: scale(1.5);
+  }
+  .locationEndPoint {
+    color: #981cfc;
+    transform: scale(0.6);
+  }
+  .locationPointer {
+    transform: scale(0.8) !important;
+  }
+}
+/* Responsiveness for 4K screen */
+@media screen and (min-width: 2560px) {
+  .locationAnimationContainer {
+    padding: 0.5vh 0vw 0.5vh 0vw;
+  }
+}

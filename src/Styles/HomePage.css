@@ -1,0 +1,109 @@
+.homeButton {
+  padding: 5vw;
+  border-radius: 15px;
+  margin: 1vw;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.homeButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.homePage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/img3.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center bottom;
+  text-decoration: none;
+  background-size: 90vw auto;
+  overflow: hidden;
+}
+.buttonContainer {
+  position: absolute;
+  left: 32vw;
+  top: 30vh;
+}
+.greetUser {
+  position: relative;
+  left: 33.2vw;
+  top: 5vh;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .greetUser {
+    position: relative;
+    left: 0vw;
+    top: 4vh;
+  }
+  .buttonContainer {
+    position: absolute;
+    left: 26vw;
+    top: 26vh;
+    flex-direction: column;
+  }
+  .homeButton {
+    padding: 10vw;
+    border-radius: 15px;
+    margin: 1vw;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .greetUser {
+    position: relative;
+    left: 0vw;
+    top: 4vh;
+  }
+  .buttonContainer {
+    position: absolute;
+    left: 26vw;
+    top: 26vh;
+    flex-direction: column;
+  }
+  .homeButton {
+    padding: 10vw;
+    border-radius: 15px;
+    margin: 1vw;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  }
+}
+/* Responsiveness for large mobile screen */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .greetUser {
+    position: relative;
+    left: 0vw;
+    top: 4vh;
+  }
+  .buttonContainer {
+    position: absolute;
+    left: 26vw;
+    top: 26vh;
+    flex-direction: column;
+  }
+  .homeButton {
+    padding: 10vw;
+    border-radius: 15px;
+    margin: 1vw;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  }
+}
+/* Responsiveness for tablet screen 768px screen */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .buttonContainer {
+    position: absolute;
+    left: 27vw;
+    top: 30vh;
+  }
+  .homeButton {
+    padding: 7vw;
+    border-radius: 15px;
+    margin: 1vw;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  }
+}

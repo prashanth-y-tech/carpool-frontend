@@ -1,0 +1,292 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Common styles used across the application */
+.violetBackground {
+  background-color: #981cfc;
+}
+.logo {
+  position: relative;
+  top: 0vh;
+  right: 44vw;
+}
+.orangeBackground {
+  background-color: #ffac1c;
+}
+.verticalFlexContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.horizantalFlexContainer {
+  display: flex;
+  flex-direction: row;
+}
+.violetText {
+  color: #981cfc;
+}
+.orangeText {
+  color: #ffac1c;
+}
+.redText {
+  color: red;
+}
+.whiteText {
+  color: white;
+}
+.blackText {
+  color: rgba(51, 64, 83, 255);
+}
+.greyText {
+  color: #4747476b;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.lite {
+  font-weight: lighter;
+}
+.bold {
+  font-weight: bolder;
+}
+.flexContainer {
+  display: flex;
+}
+.largerText {
+  font-size: 5em;
+  text-align: left;
+}
+.italic {
+  font-style: italic;
+}
+.largeText {
+  font-size: 2vw;
+  text-align: left;
+}
+.mediumLargeText {
+  font-size: 1.7vw;
+}
+.mediumText {
+  font-size: 1.35vw;
+}
+.smallText {
+  font-size: 1vw;
+}
+.smallMediumText {
+  font-size: 1.1vw;
+}
+.openSansFont {
+  font-family: "Open Sans", sans-serif;
+}
+.revertFont {
+  font-family: revert;
+}
+.displayHidden {
+  display: none;
+}
+.paddingInline-1 {
+  padding-inline: 2vw;
+}
+.loadingSpinner {
+  position: absolute;
+  left: 48vw;
+  top: 48vh;
+  right: 48vw;
+  bottom: 48vh;
+  z-index: 2;
+}
+.alertMessage {
+  width: fit-content;
+  height: fit-content;
+  z-index: 3;
+  position: fixed !important;
+  top: 3vh;
+  left: 40vw;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  right: 40vw;
+}
+.leftTextAlign {
+  text-align: left;
+}
+.rightTextAlign {
+  text-align: right;
+}
+.centerTextAlign {
+  text-align: center;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .largerText {
+    font-size: 3em;
+    text-align: left;
+  }
+  .smallText {
+    font-size: 3vw;
+  }
+  .largeText {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .mediumLargeText {
+    font-size: 4.7vw;
+  }
+  .smallMediumText {
+    font-size: 3.1vw;
+  }
+  .mediumText {
+    font-size: 4.35vw;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .largerText {
+    font-size: 3.3em;
+    text-align: left;
+  }
+
+  .smallText {
+    font-size: 2vw;
+  }
+  .largeText {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .mediumLargeText {
+    font-size: 4.7vw;
+  }
+  .smallMediumText {
+    font-size: 2.1vw;
+  }
+  .mediumText {
+    font-size: 4.35vw;
+  }
+}
+/* Css for large mobile screen  */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .largerText {
+    font-size: 3.5em;
+    text-align: left;
+  }
+
+  .smallText {
+    font-size: 2vw;
+  }
+  .largeText {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .mediumLargeText {
+    font-size: 4.7vw;
+  }
+  .smallMediumText {
+    font-size: 2.1vw;
+  }
+  .mediumText {
+    font-size: 4.35vw;
+  }
+}
+/* Responsiveness for tablet screen */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .largerText {
+    font-size: 4em;
+    text-align: left;
+  }
+  .contentSection {
+    width: 64.3vw;
+    background-image: url(/src/assets/img1.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center bottom;
+    background-size: 55vw auto;
+  }
+  .contentDescSection {
+    padding-left: 4vw;
+    line-height: 1;
+    margin-top: 10vh;
+  }
+  .formSection {
+    height: 100vh;
+    top: 0vh;
+    width: 35.7vw;
+    right: 0vw;
+    background-image: url(/src/assets/imgg2.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: auto 100vh;
+  }
+}
+/* Css for 4k screen desktop */
+@media screen and (min-width: 2560px) {
+  .largerText {
+    font-size: 9em;
+    text-align: left;
+  }
+}

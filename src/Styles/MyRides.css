@@ -1,0 +1,149 @@
+.rideHead {
+  border-radius: 5px;
+  padding: 5px 7px 5px 7px;
+  width: fit-content;
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+.rideSection {
+  width: 50vw;
+  min-height: 80vh;
+  padding-left: 4vw;
+}
+.MyRides {
+  min-height: 100vh;
+  height: fit-content;
+  background-image: url("../assets/img4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: content-box;
+  background-position: bottom;
+  background-size: 90vw auto;
+}
+.noOfferRideMsg{
+  position: absolute;
+  right: 32vw;
+  top: 53vh;
+}
+.noBookedRideMsg {
+    position: absolute;
+    left: 10vw;
+    top: 53vh;
+}
+/* Responsiveness for small mobile screen */
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .myRidesSection {
+    flex-direction: column;
+  }
+  .noOfferRideMsg {
+    position: absolute;
+    right: 37vw;
+    top: 124vh;
+}
+.noBookedRideMsg {
+  position: absolute;
+  left: 36vw;
+  top: 53vh;
+}
+  .rideSection {
+    width: 100vw;
+    min-height: 80vh;
+    padding-left: 8vw;
+  }
+  .rideHead {
+    border-radius: 5px;
+    padding: 5px 7px 5px 7px;
+    width: fit-content;
+    margin-top: 5vh;
+    margin-left: 26vw;
+    margin-bottom: 4vh;
+  }
+  .MyRides {
+    min-height: 100vh;
+    height: fit-content;
+    background-image: url(/src/assets/img4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: bottom;
+    background-size: 100vw;
+  }
+}
+/* Responsiveness for medium mobile screen */
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .myRidesSection {
+    flex-direction: column;
+  }
+  .noOfferRideMsg {
+    position: absolute;
+    right: 37vw;
+    top: 124vh;
+}
+.noBookedRideMsg {
+  position: absolute;
+  left: 36vw;
+  top: 53vh;
+}
+  .rideSection {
+    width: 100vw;
+    min-height: 80vh;
+    padding-left: 8vw;
+  }
+  .rideHead {
+    border-radius: 5px;
+    padding: 5px 7px 5px 7px;
+    width: fit-content;
+    margin-top: 5vh;
+    margin-left: 26vw;
+    margin-bottom: 4vh;
+  }
+  .MyRides {
+    min-height: 100vh;
+    height: fit-content;
+    background-image: url(/src/assets/img4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: bottom;
+    background-size: 100vw;
+  }
+}
+/* Responsiveness for large mobile screen */
+@media screen and (min-width: 425px) and (max-width: 500px) {
+  .myRidesSection {
+    flex-direction: column;
+  }
+  .noOfferRideMsg {
+    position: absolute;
+    right: 37vw;
+    top: 124vh;
+}
+.noBookedRideMsg {
+  position: absolute;
+  left: 36vw;
+  top: 53vh;
+}
+  .rideSection {
+    width: 100vw;
+    min-height: 80vh;
+    padding-left: 8vw;
+  }
+  .rideHead {
+    border-radius: 5px;
+    padding: 5px 7px 5px 7px;
+    width: fit-content;
+    margin-top: 5vh;
+    margin-left: 26vw;
+    margin-bottom: 4vh;
+  }
+  .MyRides {
+    min-height: 100vh;
+    height: fit-content;
+    background-image: url(/src/assets/img4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: bottom;
+    background-size: 100vw;
+  }
+}
