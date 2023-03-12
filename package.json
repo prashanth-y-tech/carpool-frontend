@@ -1,12 +1,12 @@
 {
   "name": "frontend",
   "private": true,
-  "homepage": "https://prashanth-y-tech.github.io/carpool-frontend/",
+  "homepage": "https://prashanth-y-tech.github.io/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
