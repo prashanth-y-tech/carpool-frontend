@@ -41,7 +41,6 @@ export const MyRides = () => {
     const user = store.getState();
     if (user.user == null) {
       navigate("/");
-      window.alert("Please SignIn/SignUp!");
     }
     setuser(user.user);
   };
