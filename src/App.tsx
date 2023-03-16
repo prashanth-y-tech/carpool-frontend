@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import { Signup } from "./Components/Signup";
 import { SignIn } from "./Components/SignIn";
@@ -8,9 +7,6 @@ import { BookingPage } from "./Components/BookingPage";
 import { MyRides } from "./Components/MyRides";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { OfferRide } from "./Components/OfferRide";
-import { RideBookDetails } from "./Components/RideBookDetails";
-import { useNavigate, redirect } from "react-router-dom";
-import store from "./redux/store";
 
 function App() {
   return (
